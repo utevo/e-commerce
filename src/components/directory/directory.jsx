@@ -11,13 +11,13 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/Xzxygsw/sneakers.jpg',
+          title: 'hoodies',
+          imageUrl: 'https://i.ibb.co/ZdsvBLK/hoodies.jpg',
           id: 1,
         },
         {
-          title: 'hoodies',
-          imageUrl: 'https://i.ibb.co/ZdsvBLK/hoodies.jpg',
+          title: 'sneakers',
+          imageUrl: 'https://i.ibb.co/Xzxygsw/sneakers.jpg',
           id: 2,
         },
         {
