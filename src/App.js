@@ -8,7 +8,7 @@ import ShopPage from './pages/shoppage/shoppage';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/shop' component={ShopPage} />
