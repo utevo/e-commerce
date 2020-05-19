@@ -1,5 +1,5 @@
 .sign-in {
-    width: 30vw;
+    width: 400px;
     display: flex;
     flex-direction: column;
 
@@ -11,5 +11,10 @@
     .subtitle {
         margin: 5px 0px;
         color: grey;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
     }
 }
