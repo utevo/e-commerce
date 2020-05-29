@@ -13,8 +13,10 @@ class SignUp extends React.Component {
     super(props)
 
     this.state = {
+      displayName: '',
       email: '',
-      password: ''
+      password: '',
+      confirmPassword: ''
     }
   }
 
@@ -27,20 +29,25 @@ class SignUp extends React.Component {
     event.preventDefault()
 
     this.setState({
+      displayName: '',
       email: '',
-      password: ''
+      password: '',
+      confirmPassword: ''
     })
   }
 
   render() {
+    const {displayName, email, password, confirmPassword} = this.state
     return (
       <div className='sign-up'>
         <h2 className='title'>You don't have an accout?</h2>
         <span className='subtitle'>Sign Up</span>
 
         <form onSubmit={this.handleSubmit}>
-          <FormInput name='email' type='email' value={this.state.email} onChange={this.handleChange} label='email' />
-          <FormInput name='password' type='password' value={this.state.password} onChange={this.handleChange} label='password' />
+          <FormInput name='displayName' type='text' value={displayName} onChange={this.handleChange} label='name' />
+          <FormInput name='email' type='email' value={email} onChange={this.handleChange} label='email' />
+          <FormInput name='password' type='password' value={password} onChange={this.handleChange} label='password' />
+          <FormInput name='confirmPassword' type='password' value={confirmPassword} onChange={this.handleChange} label='confirm password' />
 
           <div className='buttons'>
             <CustomButton type='submit'>Sign Up</CustomButton>
